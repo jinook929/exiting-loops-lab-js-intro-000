@@ -25,11 +25,14 @@ function findBy(array, findFn) {
   return found;
 }
 
-function findFn(target) {
-  for(let i = 0; i < array.length; i++) {
-    if(array[i] === target) {
-      return array[i];
-    }
+function findFn(target, index, array) {
+  if(array[index] === target) {
+    return array[index];
   }
+  // for(let i = 0; i < array.length; i++) {
+  //   if(array[i] === target) {
+  //     return array[i];
+  //   }
+  // }
   return null;
 }
