@@ -26,10 +26,14 @@ function findBy(array, findFn) {
 }
 
 function findFn(element) {
-  for(let i = 0; i < array.length; i++) {
-    if(element === "a value") {
-      return element;
-    }
+  if(element !== "a value") {
+    return null;
   }
-  return null;
+  return element;
+  // for(let i = 0; i < array.length; i++) {
+  //   if(element === "a value") {
+  //     return element;
+  //   }
+  // }
+  // return null;
 }
